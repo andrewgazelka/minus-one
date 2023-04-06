@@ -1,0 +1,15 @@
+[package]
+name = "minus-one"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A proc-macro crate to subtract one from a number"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+
+[lib]
+proc-macro = true
