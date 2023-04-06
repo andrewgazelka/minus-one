@@ -1,4 +1,5 @@
 # minus-one
+[![Crates.io](https://img.shields.io/crates/v/minus-one.svg?style=plastic)](http://crates.io/crates/minus-one)
 
 ```rust
 let max_byte: u8 = minus_one!(256);
