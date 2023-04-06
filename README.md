@@ -2,10 +2,10 @@
 [![Crates.io](https://img.shields.io/crates/v/minus-one.svg?style=plastic)](http://crates.io/crates/minus-one)
 
 ```rust
-let max_byte: u8 = minus_one!(256);
+let max_byte: u8 = minus_one!(256); // expands to 255
 assert_eq!(max_byte, 255);
 
-let min_byte: u8 = minus_one!(1);
+let min_byte: u8 = minus_one!(1); // expands to 0
 assert_eq!(min_byte, 0);
 ```
 
