@@ -9,7 +9,7 @@ pub fn minus_one(input: TokenStream) -> TokenStream {
     let literal: LitInt = parse_macro_input!(input);
 
     // Convert the literal to i64, subtract 1, and create a new literal
-    let value = literal.base10_parse::<i64>().unwrap() - 1;
+    let value = literal.base10_parse::<i128>().unwrap() - 1;
     let new_literal = LitInt::new(&value.to_string(), literal.span());
 
     // Generate the final token stream
